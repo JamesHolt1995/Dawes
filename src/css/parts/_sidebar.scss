@@ -1,0 +1,47 @@
+.sidebar{display: none;}
+
+
+@media screen and (min-width: 480px) {
+
+.sidebar {
+  padding:30px;
+  width: 100%;
+  background: black;
+  height: 123px;
+  box-sizing: border-box;
+  border-right: 1px solid white;
+}
+
+.sidebar__description {display:none;}
+
+.sidebar__links {display:none;}
+
+.sidebar__links a:hover {font-style: italic; font-weight: bold;}
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+.sidebar {
+  display:block;
+  width: 15%;
+  height: 100vh;
+  position:fixed;
+  top:0px;
+  left:0px;
+  padding:40px;
+}
+  
+.sidebar__description {
+  display: block;
+  margin-top:40px;
+}
+
+.sidebar__links {
+  margin-top:40px;
+  display:flex;
+  flex-direction:column;
+}
+
+}

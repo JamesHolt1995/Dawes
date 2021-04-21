@@ -1,0 +1,25 @@
+.burger {
+  width:60px;
+  position:fixed;
+  top:30px;
+  right:30px;
+  z-index: 99;
+}
+
+.burger__line {
+  width:100%;
+  height:1px;
+  background-color:white;
+  margin-bottom:10px
+}
+
+.burger__line--small {
+  width:50%;
+  margin-left:auto;
+}
+
+@media screen and (min-width: 1280px) {
+
+.burger {display:none;}  
+
+}

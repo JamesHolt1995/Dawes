@@ -1,7 +1,7 @@
 .header {
 	display:flex;
 	position: fixed;
-	top:0;
+	top:30px;
 	right:0;
 	width:100%;
 	background:black;
@@ -16,6 +16,7 @@
 @media screen and (min-width: 1280px) {
 
 .header {
+	top:0;
 	font-weight: 400;
 	width: calc(85% - 1px);
 	padding:20px;

@@ -4,14 +4,22 @@
  https://github.com/eyeofchaos/eocjsNewsticker
 
  */
+#ticker {
+  background-color: #ffffff;
+  position:fixed;
+  top:0;
+  z-index: 99;
+  width:100%;
+  color: black;
+}
 
 .newsticker__item{
   color: black;
 }
 
 .eocjs-newsticker {
-  padding: 10px 0;
-  background-color: #f2f2f2;
+  padding: 5px 0;
+  background-color: #ffffff;
 }
 
 .eocjs-newsticker .eocjs-newsticker-container {
@@ -46,4 +54,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (min-width: 1280px) {
+  #ticker{display: none;}
 }

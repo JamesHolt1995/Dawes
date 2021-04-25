@@ -4,7 +4,7 @@ $( document ).ready(function() {
     	animation: "fade",
     	controlNav: false,
     	directionNav: false, 
-    	//slideshow: false,
+    	slideshow: false,
     	start: function(slider) {
 		$('.slides li img', slider).click(function(event){
 		    event.preventDefault();
@@ -18,23 +18,30 @@ $( document ).ready(function() {
 	  $(this).closest('.projects__project').children('.projects__slides').toggleClass('projects__slides--open');
 	});
 
-	new kursor({
+
+
+	//News ticker
+	if (screen.width < 480) {
+
+    	$("#ticker").eocjsNewsticker();
+
+	} else {
+
+		new kursor({
 		type: 1,
 		color: '#ffffff'
-	});
-
-	 //News ticker
-    $("#ticker").eocjsNewsticker();
+		});
+	}
 
 	const dt = new Date();
-	const time = dt.getHours() + ":" + dt.getMinutes();
+	const time = (dt.getHours()==0?'0':'') + dt.getHours() + ":" + (dt.getMinutes()<10?'0':'') + dt.getMinutes();
   	document.getElementById("time").innerHTML = time;
 
 	const interval = setInterval(myTimer, 1000);
 
 	function myTimer() {
   		const dt = new Date();
-		const time = dt.getHours() + ":" + dt.getMinutes();
+		const time = (dt.getHours()==0?'0':'') + dt.getHours() + ":" + (dt.getMinutes()<10?'0':'') + dt.getMinutes();
   		document.getElementById("time").innerHTML = time;
 	}
 

@@ -7,7 +7,7 @@
     padding:16px;
     background-color:black;
     height:auto;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid $grey;
     width:100%;
   }
 
@@ -35,11 +35,14 @@
   }
 
   &__slides {
-    background-color: white;
+    background-color: black;
     width:100%;
     z-index: 0;
     order:2;
     display:none;
+    li {
+      outline:2px solid black;
+    }
     &--open {display:block;}
   }
 
@@ -57,9 +60,7 @@
     display:flex;
     flex-direction:column;
     padding:30px;
-    background-color:black;
     height:auto;
-    border-bottom: 1px solid white;
     width:100%;
   }
 

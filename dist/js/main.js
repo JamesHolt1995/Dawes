@@ -1,10 +1,13 @@
 $( document ).ready(function() {
 
+//custom cursor for desktop
+const cursor = $(".cursor");
+
 $('.flexslider').flexslider({
-	animation: "fade",
+	animation: "slide",
 	controlNav: false,
 	directionNav: false, 
-	slideshow: false,
+	slideshow: true,
 	start: function(slider) {
 	$('.slides li img', slider).click(function(event){
 	    event.preventDefault();
@@ -20,17 +23,25 @@ $( ".cross" ).click(function() {
 
 
 
-//News ticker
+$( ".link" ).click(function() {
+    $('html, body').animate({
+        scrollTop: $("#last").offset().top
+    }, 2000);
+	//$("body").css("cursor","none");
+});
+
+
 if (screen.width < 480) {
 
+	//News ticker for mobile
 	$("#ticker").eocjsNewsticker();
 
 } else {
 
-	// new kursor({
-	// type: 1,
-	// color: '#ffffff'
-	// });
+	document.addEventListener('mousemove', (e) => {
+  		$(cursor).css({"top": (e.clientY - 20) + "px", "left": (e.clientX - 20) + "px"});
+	});
+
 }
 
 //time
@@ -41,29 +52,13 @@ const time = (dt.getHours()==0?'0':'') + dt.getHours() + ":" + (dt.getMinutes()<
 const interval = setInterval(myTimer, 1000);
 
 function myTimer() {
-		const dt = new Date();
+	const dt = new Date();
 	const time = (dt.getHours()==0?'0':'') + dt.getHours() + ":" + (dt.getMinutes()<10?'0':'') + dt.getMinutes();
-		document.getElementById("time").innerHTML = time;
+	document.getElementById("time").innerHTML = time;
 }
 
-//gsap
-let proxy = { skew: 0 },
-    skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
-    clamp = gsap.utils.clamp(-30, 30); // don't let the skew go beyond 20 degrees. 
 
-ScrollTrigger.create({
-  onUpdate: (self) => {
-    let skew = clamp(self.getVelocity() / -500);
-    // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
-    if (Math.abs(skew) > Math.abs(proxy.skew)) {
-      proxy.skew = skew;
-      gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
-    }
-  }
-});
 
-// make the right edge "stick" to the scroll bar. force3D: true improves performance
-gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
 
 });// end of document ready
 

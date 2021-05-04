@@ -12,4 +12,13 @@
 	z-index: 3;
 	//transition:all 0.2s ease-out;
 	pointer-events: none;
+	display:none;
+}
+
+@media screen and (min-width: 480px) {
+
+.cursor {
+	display:block;
+}
+
 }

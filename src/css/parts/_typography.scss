@@ -9,10 +9,11 @@
 .underline {text-decoration:underline;}
 
 .heading {
-	font-family: FreightBig Pro;
 	font-size: 30px; 
 	text-transform: uppercase;
-	font-weight: lighter;
+	font-family: freight-big-pro, serif;
+	font-weight: 500;
+	font-style: normal;
 	margin-bottom: 5px;
 	margin-top: -8px;
 }

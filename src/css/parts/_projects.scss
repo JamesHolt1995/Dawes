@@ -68,6 +68,9 @@
     width:80%;
     margin-top:10px;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .heading {display:block;}
   }
 
@@ -86,9 +89,9 @@
 
 
 .projects {
-  width: calc(85% - 1px);
+  width: calc(82% - 1px);
   margin-left: auto;
-  margin-top: 70px;
+  margin-top: 60px;
 
   &__project {
     display:flex;
@@ -98,12 +101,13 @@
 
   &__description {
     margin:0;
-    width:20%;
-    margin-right:40px;
+    width:25%;
+    margin-right:18px;
     order: 1;
   }
   
   &__slides {
+    width:75%;
     display:block;
   }
 }

@@ -9,22 +9,28 @@
 	z-index: 1;
 	padding:10px;
 	justify-content: space-between;
-	font-weight: lighter;
-	font-size: 16px;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
 }
 
 @media screen and (min-width: 1280px) {
 
 .header {
+	justify-content: flex-start;
 	top:0;
-	font-weight: 400;
 	padding:20px;
-	&__text {
-		font-size: 20px;
-		width:20%;
-		margin-right: 40px;
+	&__works {
+		width:calc(18% - 12px);
 	}
-	&__text--long {width:40%;}
+	&__time {
+		width:70%;
+	}
+	&__about {
+		margin-left:auto;
+		margin-right: 2px;
+	}
+
 }
 
 }

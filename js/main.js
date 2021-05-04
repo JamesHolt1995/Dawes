@@ -8,6 +8,22 @@ $('.flexslider').flexslider({
 	controlNav: false,
 	directionNav: false, 
 	slideshow: true,
+	slideshowSpeed: 4000,
+	start: function(slider) {
+	$('.slides li img', slider).click(function(event){
+	    event.preventDefault();
+	    slider.flexAnimate(slider.getTarget("next"));
+	});
+	}
+});
+
+$('.flexslider-alt').flexslider({
+	animation: "slide",
+	controlNav: false,
+	directionNav: false, 
+	slideshow: true,
+	initDelay: 2000,
+	slideshowSpeed: 4000,
 	start: function(slider) {
 	$('.slides li img', slider).click(function(event){
 	    event.preventDefault();

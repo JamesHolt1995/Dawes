@@ -9,11 +9,11 @@ $('.flexslider').flexslider({
 	directionNav: false, 
 	slideshow: true,
 	slideshowSpeed: 4000,
-	start: function(slider) {
-	$('.slides li img', slider).click(function(event){
-	    event.preventDefault();
-	    slider.flexAnimate(slider.getTarget("next"));
-	});
+	// start: function(slider) {
+	// $('.slides li img', slider).click(function(event){
+	//     event.preventDefault();
+	//     slider.flexAnimate(slider.getTarget("next"));
+	// });
 	}
 });
 

@@ -31,7 +31,7 @@ font-style: normal;
 .site {font-size: 12px;}
 
 .heading {
-	font-size: 3.2vw;
+	font-size: 2.8vw;
 	margin-bottom: 20px;
 }
 
@@ -42,5 +42,9 @@ font-style: normal;
 @media screen and (min-width: 2560px) {
 
 .site {font-size: 14px;}
+
+.heading {
+	font-size: 64px;
+}
 
 }

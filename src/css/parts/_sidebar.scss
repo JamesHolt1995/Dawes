@@ -10,13 +10,12 @@
   height: 123px;
   box-sizing: border-box;
   border-right: 1px solid $grey;
+  &__description {display:none;}
+  &__links {display:none;}
+  &__links a:hover {font-style: italic; font-weight: bold;}
 }
 
-.sidebar__description {display:none;}
 
-.sidebar__links {display:none;}
-
-.sidebar__links a:hover {font-style: italic; font-weight: bold;}
 
 }
 
@@ -31,17 +30,18 @@
   top:0px;
   left:0px;
   padding:20px;
+  &__description {
+    display: block;
+    margin-top:40px;
+  }
+  &__links {
+    margin-top:40px;
+    display:flex;
+    flex-direction:column;
+  }
 }
   
-.sidebar__description {
-  display: block;
-  margin-top:40px;
-}
 
-.sidebar__links {
-  margin-top:40px;
-  display:flex;
-  flex-direction:column;
-}
+
 
 }

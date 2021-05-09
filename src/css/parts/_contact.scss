@@ -1,0 +1,25 @@
+/* ====================================================================================================================
+ * CONTACT SCSS
+ * ====================================================================================================================*/
+
+.contact {display:none;}
+
+
+@media screen and (min-width: 1280px) {
+
+
+.contact {
+	height:8vw;
+	width:18%;
+	border-top: 1px solid $grey;
+	position: fixed;
+	bottom:0;
+	left:0;
+	padding:20px;
+	&__info {
+		display:flex;
+		p {margin-left: 10px;}
+	}
+}
+
+}

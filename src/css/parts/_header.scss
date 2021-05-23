@@ -1,12 +1,12 @@
 .header {
 	display:flex;
-	position: fixed;
+	position: sticky;
 	top:30px;
 	right:0;
 	width:100%;
 	background:black;
 	border-bottom: 1px solid $grey;
-	z-index: 1;
+	z-index: 2;
 	padding:10px;
 	justify-content: space-between;
 	font-weight: 300;
@@ -18,8 +18,10 @@
 
 .header {
 	justify-content: flex-start;
-	top:0;
+	top:-1px;
 	padding:20px;
+	border-top: 1px solid $grey;
+	margin-top: 100vh;
 	&__works {
 		width:39%;
 	}

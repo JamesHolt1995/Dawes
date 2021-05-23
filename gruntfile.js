@@ -34,6 +34,16 @@ grunt.initConfig({
   		dest: 'dist/img'
   	}
   },
+  autoprefixer: {
+    options: {
+      browsers: ['last 5 versions']
+    },
+    dist:{
+      files:{
+        'dist/css/main.css':'dist/css/main.css'
+      }
+    }
+  },
   watch: { 
   scripts: {
     files: ['**/*.js', '**/*.html', '**/*.scss'],
@@ -42,13 +52,15 @@ grunt.initConfig({
 }
 });
 
+
 grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-contrib-sass');
 grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-contrib-watch');
+grunt.loadNpmTasks('grunt-autoprefixer');
 
 grunt.registerTask('default',[
-	'jshint','copy:main','copy:js', 'copy:img','sass','watch'
+	'jshint','copy:main','copy:js', 'copy:img','sass', 'autoprefixer', 'watch'
 ]);
 
 };

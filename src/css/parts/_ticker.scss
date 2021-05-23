@@ -6,11 +6,12 @@
  */
 #ticker {
   background-color: #ffffff;
-  position:fixed;
+  position:sticky;
   top:0;
   z-index: 99;
   width:100%;
   color: black;
+  margin-top: calc(100vh - 30px)
 }
 
 .newsticker__item{

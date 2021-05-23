@@ -10,12 +10,13 @@
 
 .contact {
 	display: block;
-	width:18%;
+	width:calc(100% + 40px);
 	border-top: 1px solid $grey;
-	position: fixed;
-	bottom:0;
-	left:0;
 	padding:20px;
+	padding-bottom: 0;
+	margin-top: auto;
+	margin-left: -20px;
+	margin-right: -20px;
 	&__info {
 		display:flex;
 		p {margin-left: 10px;}

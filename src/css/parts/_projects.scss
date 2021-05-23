@@ -1,5 +1,8 @@
 .projects {
-  margin-top: 75px;
+  //margin-top: 75px;
+  background-color: #000;
+  z-index: 1;
+  position:sticky;
 
   &__project {
     display:flex;
@@ -9,6 +12,7 @@
     height:auto;
     border-bottom: 1px solid $grey;
     width:100%;
+    z-index: 1;
   }
 
   &__title {
@@ -94,7 +98,8 @@
 .projects {
   width: calc(82% - 1px);
   margin-left: auto;
-  margin-top: 60px;
+  margin-top: calc(-100vh + 62px);
+
 
   &__project {
     display:flex;

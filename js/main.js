@@ -32,8 +32,11 @@ $('.flexslider-alt').flexslider({
 	}
 });
 
+
+// open and close project
 $( ".cross" ).click(function() {
   $(this).toggleClass('cross--open');
+  $(this).closest('.projects__project').children('.projects__dots').toggleClass('projects__dots--open');
   $(this).closest('.projects__project').children('.projects__slides').toggleClass('projects__slides--open');
 });
 
@@ -47,12 +50,12 @@ $( ".link" ).click(function() {
 });
 
 
-if (screen.width < 480) {
+if (screen.width < 768) {
 
 	//News ticker for mobile
 	$("#ticker").eocjsNewsticker();
 
-} else {
+} else if (screen.width > 1023)  {
 
 	document.addEventListener('mousemove', (e) => {
   		$(cursor).css({"top": (e.clientY - 20) + "px", "left": (e.clientX - 20) + "px"});

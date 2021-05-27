@@ -20,7 +20,10 @@
 //}
 
 
-@media screen and (min-width: 1280px) {
+// desktop large
+//////////////////////////////////////////////////////////////////////////////////
+
+@include mq($from: desktopLarge) {
 
 .sidebar {
   display:flex;
@@ -50,3 +53,18 @@
 
 
 }
+
+// extraWide
+//////////////////////////////////////////////////////////////////////////////////
+
+@include mq($from: extraWide) {
+
+.sidebar {
+  width:16%;
+  &__description {
+    br{display: none;}
+  }
+}
+ 
+}
+

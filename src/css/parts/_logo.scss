@@ -1,5 +1,8 @@
 
-@media screen and (min-width: 480px) {
+// mobile large
+//////////////////////////////////////////////////////////////////////////////////
+
+@include mq($from: mobileMedium) {
 
 .logo {
 	width:256px;
@@ -8,11 +11,14 @@
 
 }
 
-@media screen and (min-width: 1280px) {
+// desktop large
+//////////////////////////////////////////////////////////////////////////////////
+
+@include mq($from: desktopLarge) {
 
 .logo {
   width:100%;
-  margin-bottom: 50px;
+  //margin-bottom: 50px;
 }
 
 }

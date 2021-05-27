@@ -7,26 +7,56 @@
 	background:black;
 	border-bottom: 1px solid $grey;
 	z-index: 2;
-	padding:10px;
+	padding:10px 16px;
 	justify-content: space-between;
 	font-weight: 300;
 	font-style: normal;
+	font-size: 12px;
+	&__clock {font-weight: 400;}
+}
+
+
+// tablet
+//////////////////////////////////////////////////////////////////////////////////
+
+@include mq($from: tablet) {
+
+.header {
+	margin-top: 100vh;
+	top:-1px;
+	border-top: 1px solid $grey;
+	&__time {
+		margin-left: -5vw;
+	}
+}
+
+}
+
+// desktop
+//////////////////////////////////////////////////////////////////////////////////
+
+@include mq($from: desktop) {
+
+.header {
 	font-size: 14px;
 }
 
-@media screen and (min-width: 1280px) {
+}
+
+// desktop large
+//////////////////////////////////////////////////////////////////////////////////
+
+@include mq($from: desktopLarge) {
 
 .header {
 	justify-content: flex-start;
-	top:-1px;
 	padding:20px;
-	border-top: 1px solid $grey;
-	margin-top: 100vh;
 	&__works {
 		width:39%;
 	}
 	&__time {
 		width:70%;
+		margin-left: .8vw;
 	}
 	&__about {
 		margin-left:auto;
@@ -34,5 +64,19 @@
 	}
 
 }
+
+}
+
+// extra wide
+//////////////////////////////////////////////////////////////////////////////////
+
+@include mq($from: extraWide) {
+
+.header{
+	&__time {
+    	margin-left: -2.5vw;
+	}
+}
+
 
 }

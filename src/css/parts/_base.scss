@@ -6,6 +6,28 @@
 //variables
 $grey :#454545;
 
+$mq-breakpoints: (
+    mobileMedium:375px,
+    tablet:  768px,
+    desktop: 1024px,
+    desktopLarge: 1680px,
+    wide:1900px,
+    extraWide:2300px,
+
+) !default;
+
+//Show breakpoints 
+// $mq-show-breakpoints: (
+//     mobileMedium, 
+//     tablet, 
+//     desktop, 
+//     desktopLarge,  
+//     wide, 
+//     extraWide
+// );
+
+
+
 //base styles
 html, body {
   margin:0;
@@ -14,9 +36,11 @@ html, body {
   font-family:'forma-djr-banner', sans-serif;
   font-style: normal;
   color: white;
-  cursor: none;
 }
 
+a {
+  color: white;
+}
 .site-content {
 	background-color: black;
 	margin-top: calc(100vh - 30px);

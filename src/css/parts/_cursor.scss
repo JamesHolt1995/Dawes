@@ -15,6 +15,17 @@
 	display:none;
 }
 
+.cursor--tri {
+	background-color:transparent;
+	width: 0; 
+  	height: 0;
+  	border-radius: 0; 
+  	border-top: 20px solid transparent;
+  	border-bottom: 20px solid transparent;
+  	border-left: 30px solid white;
+
+}
+
 // desktop
 //////////////////////////////////////////////////////////////////////////////////
 

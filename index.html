@@ -30,9 +30,9 @@
 	<!-- header start -->
 
 	<div class="header">
-		<div class="header__text header__works">Selected Works</div>
+		<div id="works" class="header__text header__works">Selected Works</div>
 		<div class="header__text header__time">Leeds <span class="header__clock" id="time"></span></div>
-		<div class="header__text header__about">About</div>
+		<div id="about" class="header__text header__about">About</div>
 	</div>
 
 	<!-- header end -->
@@ -49,24 +49,20 @@
 		  </div>
 
 		  <div class="sidebar__links">
-				<a class="link">A Concrete Setting</a>
-				<a class="link">VICE - Fund Our Fun</a>
-				<a class="link">The Senior Open</a>
-				<a class="link">A Kitchen Garden in Tufnell Park</a>
-				<a class="link">A Force of Nature</a>
-				<a class="link">The BMW</a>
-				<a class="link">Grout</a>
-				<a class="link">Keebao</a>
-				<a class="link">Power of the Sea</a>
-				<a class="link">Keeboard</a>
-				<a class="link">Harewood Hillclimb</a>
-				<a class="link">Prix</a>
-				<a class="link">The BMW</a>
-				<a class="link">New York I Love You</a>
-				<a class="link">Dance</a>
-				<a class="link">Ten Eighty</a>
-				<a class="link">Exeter</a>
-				<a class="link">Power of the Sea</a>
+				<a project="concrete" class="link">A Concrete Setting</a>
+				<a project="fund" class="link">VICE - Fund Our Fun</a>
+				<a project="senior" class="link">The Senior Open</a>
+				<a project="kitchen" class="link">A Kitchen Garden in Tufnell Park</a>
+				<a project="force" class="link">A Force of Nature</a>
+				<a project="grout" class="link">Grout</a>
+				<a project="harewood" class="link">Harewood Hillclimb</a>
+				<a project="prix" class="link">Prix</a>
+				<a project="bmw" class="link">The BMW</a>
+				<a project="newYork" class="link">New York I Love You</a>
+				<a project="dance" class="link">Dance</a>
+				<a project="tenEighty" class="link">Ten Eighty</a>
+				<a project="exeter" class="link">Exeter</a>
+				<!-- <a class="link">Power of the Sea</a> -->
 		  </div>
 
 		  	<div class="contact">
@@ -89,10 +85,41 @@
 	<!-- projects start -->
 
 	<div class="projects"> 
+		<!-- Project start -->
+
+		<div class="projects__project projects__project--about">
+			<div class="projects__title">
+				<h2 class="heading">About</h2>
+			</div>
+		    <div class="projects__description">
+				<div class="heading">About</div>
+			    <p>
+			    	I am a graphic designer and photographer based in Leeds, UK. 
+			    	<br><br>
+					In both print and digital, I have created a variety of work for a diverse array of clients ranging from sport campaigns to bespoke publication printing. Inspired by peers and colleagues, and having worked both in-house and as a freelancer, I have curated an illustrious portfolio over the period of half a decade.
+					<br><br>
+					Being passionate about the physical arts as much as the visual, voice over artistry is a newfound branch to my ever-extending creative outlet.
+					<br><br>
+					(Voiceover work coming soon to Dawes)
+					<br><br>
+					Please feel free to contact me via email where we can chat about commissions and collaborations! 
+					<br><br>
+					Johnathan 
+				</p>
+		    </div>
+		    
+	    	<div class="projects__slides projects__slides--open flexslider">
+	    		<div>
+	    			<img src="img/about.jpg">
+	    		</div>
+			</div>
+		</div>
+
+		<!-- /Project end -->
 
 		<!-- Project start -->
 
-		<div class="projects__project">
+		<div id="concrete" class="projects__project">
 			<div class="projects__title">
 				<h2 class="heading">A Concrete <i>JUNGLE.</i></h2>
 				<img class="cross cross--open" src="img/cross.svg">
@@ -134,7 +161,7 @@
 
 		<!-- Project start -->
 
-		<div class="projects__project">
+		<div id="fund" class="projects__project">
 			<div class="projects__title">
 				<h2 class="heading">FUND OUR <i>FUN</i></h2>
 				<img class="cross" src="img/cross.svg">
@@ -189,7 +216,7 @@
 
 		<!-- Project start -->
 
-		<div class="projects__project">
+		<div id="senior" class="projects__project">
 			<div class="projects__title">
 				<h2 class="heading">THE SENIOR <i>OPEN</i></h2>
 				<img class="cross" src="img/cross.svg">
@@ -208,7 +235,7 @@
 				<br><br>
 				Client - <span class="underline">The European</span> Tour whilst working with  <span class="underline">The Lift Agency.</span>
 				<br><br>
-				<span class="underline"><i><a target="_blank">https://www.theliftagency.com</a></i></span>
+				<span class="underline"><i><a href="https://www.theliftagency.com" target="_blank">https://www.theliftagency.com</a></i></span>
 				</p>
 		    </div>
 		    
@@ -244,7 +271,7 @@
 
 		<!-- Project start -->
 
-		<div class="projects__project">
+		<div id="kitchen" class="projects__project">
 			<div class="projects__title">
 				<h2 class="heading">A <i>KITCHEN</i> GARDEN IN <i>TUFNELL</i> PARK.</h2>
 				<img class="cross" src="img/cross.svg">
@@ -294,9 +321,60 @@
 
 		<!-- /Project end -->
 
-				<!-- Project start -->
+		<!-- Project start -->
 
-		<div class="projects__project">
+		<div id="force" class="projects__project">
+			<div class="projects__title">
+				<h2 class="heading">A <i>FORCE</i> OF NATURE</h2>
+				<img class="cross" src="img/cross.svg">
+			</div>
+		    <div class="projects__description">
+				<div class="heading">A<br><i>FORCE</i><br>OF NATURE</div>
+			    <div class="projects__logo projects__logo--lyft">
+			    	<img src="img/lyft@2x.png">
+			    </div>
+			    <p>
+				Aysgarth Falls are a triple flight of waterfalls, surrounded by woodland and farmland, carved out by the River Ure over an almost one-mile stretch on its descent to mid-Wensleydale in the Yorkshire Dales of England, near the village of Aysgarth. 
+				<br><br>
+				The falls are quite spectacular after heavy rainfall as thousands of gallons of water cascade over the series of broad limestone steps, which are divided into three stages: upper force, middle force and lower force.
+				<br><br>
+				Here are some photographs of the force in action. 
+				<br><br>
+				<span style="color: #F58FDD;">Powerful stuff.</span> 
+				<br><br>
+				<span class="underline"><i><a href="https://www.theliftagency.com" target="_blank">Aysgarth Falls,  54.2945° N, 1.9834° W</a></i></span>
+				</p>
+		    </div>
+		    
+	    	<div class="projects__slides flexslider">
+	    		<ul class="slides">
+	    			<li>
+	    				<img src="img/Aysgarth_1.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Aysgarth_2.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Aysgarth_3.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Aysgarth_4.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Aysgarth_5.jpg">
+	    			</li>
+	    		</ul>
+			</div>
+			<div class="projects__dots">
+	    		<img src="img/dots.svg">
+	    	</div>
+		</div>
+
+		<!-- /Project end -->
+
+		<!-- Project start -->
+
+		<div id="bmw" class="projects__project">
 			<div class="projects__title">
 				<h2 class="heading">THE BMW</h2>
 				<img class="cross" src="img/cross.svg">
@@ -307,19 +385,19 @@
 			    	<img src="img/lyft@2x.png">
 			    </div>
 			    <p>
-				Lead on the campaign for the 2019 European Tours event, The Senior Open. Whilst working at ‘The Lift Agency’. 
+				Artworking and social media design work for the 2019 BMW PGA Championship hosted by the European Tour. 
 				<br><br>
-				The Senior Open is a professional golf tournament for players aged 50 and over.  It is run by The R&A, the same body that organises The Open Championship. 
+				The BMW Championship is a professional golf tournament which is the penultimate FedEx Cup playoff event on the PGA tour schedule. Introduced in 2007, the BMW Championship was previously known as the Western Open.
 				<br><br>
-				<span style="color: #F5E28F;">Identity, Artworking, Print & Editorial.</span> 
+				<span style="color: #F5E28F;">Artworking, Social Media design. </span> 
 				<br><br>
 				Client - <span class="underline">The European</span> Tour whilst working with  <span class="underline">The Lift Agency.</span>
 				<br><br>
-				<span class="underline"><i><a target="_blank">https://www.theliftagency.com</a></i></span>
+				<span class="underline"><i><a href="https://www.theliftagency.com" target="_blank">https://www.theliftagency.com</a></i></span>
 				</p>
 		    </div>
 		    
-	    	<div class="projects__slides flexslider">
+	    	<div class="projects__slides flexslider-alt">
 	    		<ul class="slides">
 	    			<li>
 	    				<img src="img/BMW_1.jpg">
@@ -338,6 +416,344 @@
 		</div>
 
 		<!-- /Project end -->
+
+		<!-- Project start -->
+
+		<div id="grout" class="projects__project">
+			<div class="projects__title">
+				<h2 class="heading">GROUT</h2>
+				<img class="cross" src="img/cross.svg">
+			</div>
+		    <div class="projects__description">
+				<div class="heading">GROUT</div>
+			    <div class="projects__logo projects__logo--grout">
+			    	<img src="img/grout@2x.png">
+			    </div>
+			    <p>
+				Visual identity and web design project for a gardener keen to get his next bag of charlie. 
+				<br><br>
+				<span style="color: #F58FDD;">Branding, Visual identity & Web Design.</span> 
+				<br><br>
+				<span class="underline"><i><a>Client - William Grout Garden Design, London</a></i></span>
+				</p>
+		    </div>
+		    
+	    	<div class="projects__slides flexslider">
+	    		<ul class="slides">
+	    			<li>
+	    				<img src="img/Grout_1.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Grout_2.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Grout_3.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Grout_4.jpg">
+	    			</li>
+	    		</ul>
+			</div>
+			<div class="projects__dots">
+	    		<img src="img/dots.svg">
+	    	</div>
+		</div>
+
+		<!-- /Project end -->
+
+		<!-- Project start -->
+
+		<div id="keeboard" class="projects__project">
+			<div class="projects__title">
+				<h2 class="heading"><i>Kee</i>board</h2>
+				<img class="cross" src="img/cross.svg">
+			</div>
+		    <div class="projects__description">
+				<div class="heading"><i>Kee</i>board</div>
+			    <p>
+				Eurgenomic Keyboard design and Visual Identity early stages of development work. 
+				</p>
+		    </div>
+		    
+	    	<div class="projects__slides flexslider-alt">
+	    		<ul class="slides">
+	    			<li>
+	    				<img src="img/Keeboard_1.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Keeboard_2.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Keeboard_3.jpg">
+	    			</li>
+	    		</ul>
+			</div>
+			<div class="projects__dots">
+	    		<img src="img/dots.svg">
+	    	</div>
+		</div>
+
+		<!-- /Project end -->
+
+		<!-- Project start -->
+
+		<div id="harewood" class="projects__project">
+			<div class="projects__title">
+				<h2 class="heading">HAREWOOD <i>HILLCLIMB</i></h2>
+				<img class="cross" src="img/cross.svg">
+			</div>
+		    <div class="projects__description">
+				<div class="heading">HAREWOOD<br><i>HILLCLIMB</i></div>
+			    <p>
+				Concept website for the famous Harewood speed Hillclimb located in the village of Harewood, West Yorkshire, England.
+				<br><br>
+				<span style="color: #9BF58F;">Photography and Web Design.</span> 
+				<br><br>
+ 				<span class="underline"><i>53.903476, -1.488106</i></span>
+				</p>
+		    </div>
+		    
+	    	<div class="projects__slides flexslider">
+	    		<ul class="slides">
+	    			<li>
+	    				<img src="img/Harewood_1.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Harewood_2.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Harewood_3.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Harewood_4.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Harewood_5.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Harewood_6.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Harewood_7.jpg">
+	    			</li>
+	    		</ul>
+			</div>
+			<div class="projects__dots">
+	    		<img src="img/dots.svg">
+	    	</div>
+		</div>
+
+		<!-- /Project end -->
+
+		<!-- Project start -->
+
+		<div id="prix" class="projects__project">
+			<div class="projects__title">
+				<h2 class="heading">PRIX</h2>
+				<img class="cross" src="img/cross.svg">
+			</div>
+		    <div class="projects__description">
+				<div class="heading">PRIX</div>
+			    <p>
+				Calander for the Donington Grand Prix Collection.
+				<br><br>
+				<span style="color: #73D88A;">Photography and Web Design.</span> 
+				<br><br>
+ 				<span class="underline">Client - Donington Grand Prix Collection.</span>
+				</p>
+		    </div>
+		    
+	    	<div class="projects__slides flexslider-alt">
+	    		<ul class="slides">
+	    			<li>
+	    				<img src="img/Prix_1.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Prix_2.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Prix_3.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Prix_4.jpg">
+	    			</li>
+	    		</ul>
+			</div>
+			<div class="projects__dots">
+	    		<img src="img/dots.svg">
+	    	</div>
+		</div>
+
+		<!-- /Project end -->
+
+		<!-- Project start -->
+
+		<div id="newYork" class="projects__project">
+			<div class="projects__title">
+				<h2 class="heading">New York I LOVE YOU.</h2>
+				<img class="cross" src="img/cross.svg">
+			</div>
+		    <div class="projects__description">
+				<div class="heading">New York <br>I LOVE YOU.</div>
+			    <p>
+				Photographs of New York City after visiting there in 2016. Being in New York City itself was all too surreal, like a dream come true. Buildings raced each other in a quest to touch the soft blue sky and people littered the streets and sidewalks. Life there was upbeat and fast-paced,  everyone and everything was moving.
+				<br><br>
+				<span style="color: #F57979;">Photography</span> 
+				<br><br>
+ 				<span class="underline"><i>40.7484° N, 73.9857° W</i></span>
+				</p>
+		    </div>
+		    
+	    	<div class="projects__slides flexslider">
+	    		<ul class="slides">
+	    			<li>
+	    				<img src="img/New-York_1.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/New-York_2.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/New-York_3.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/New-York_4.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/New-York_5.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/New-York_6.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/New-York_7.jpg">
+	    			</li>
+	    		</ul>
+			</div>
+			<div class="projects__dots">
+	    		<img src="img/dots.svg">
+	    	</div>
+		</div>
+
+		<!-- /Project end -->
+		
+		<!-- Project start -->
+
+		<div id="dance" class="projects__project">
+			<div class="projects__title">
+				<h2 class="heading">DANCE</h2>
+				<img class="cross" src="img/cross.svg">
+			</div>
+		    <div class="projects__description">
+				<div class="heading">DANCE</div>
+			    <p>
+				<b>End of year show for Leeds College of Art back in 2016.</b> 
+				<br><br>
+				I have always had an admiration for architecture, buildings are predominately  the subject of my photography.  This piece was inspired by that passion combined with an interest in dystopian landscapes. 
+				<br><br>
+				<span style="color: #7F49F8;">Photography, Digital and Screen Printing.
+</span> 
+				<br><br>
+ 				<span class="underline"><i>https://www.leeds-art.ac.uk</i></span>
+				</p>
+		    </div>
+		    
+	    	<div class="projects__slides flexslider-alt">
+	    		<ul class="slides">
+	    			<li>
+	    				<img src="img/Dance_1.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Dance_2.jpg">
+	    			</li>
+	    		</ul>
+			</div>
+			<div class="projects__dots">
+	    		<img src="img/dots.svg">
+	    	</div>
+		</div>
+
+		<!-- /Project end -->
+
+		<!-- Project start -->
+
+		<div id="tenEighty" class="projects__project">
+			<div class="projects__title">
+				<h2 class="heading"><i>TEN</i>EIGHTY</h2>
+				<img class="cross" src="img/cross.svg">
+			</div>
+		    <div class="projects__description">
+				<div class="heading"><i>TEN</i>EIGHTY</div>
+			    <p>
+				Concept development work for Rising Agency for one of there clients Ten Eighty.  
+				<br><br>
+				<span style="color: #FFE308;">Visual Identity & Branding</span> 
+				<br><br>
+ 				<span class="underline"><i><a target="_blank" href="https://rising.agency">https://rising.agency</a></i></span>
+				</p>
+		    </div>
+		    
+	    	<div class="projects__slides flexslider">
+	    		<ul class="slides">
+	    			<li>
+	    				<img src="img/1080_.jpg">
+	    			</li>
+	    		</ul>
+			</div>
+			<div class="projects__dots">
+	    		<img src="img/dots.svg">
+	    	</div>
+		</div>
+
+		<!-- /Project end -->
+
+		<!-- Project start -->
+
+		<div id="exeter" class="projects__project">
+			<div class="projects__title">
+				<h2 class="heading">EXETER</h2>
+				<img class="cross" src="img/cross.svg">
+			</div>
+		    <div class="projects__description">
+				<div class="heading">EXETER</div>
+			    <p>
+				Trip down to one of the most beautiful parks of the UK, Devon Exeter.  
+				<br><br>
+				<span style="color: #EBA054;">Photography</span> 
+				</p>
+		    </div>
+		    
+	    	<div class="projects__slides flexslider">
+	    		<ul class="slides">
+	    			<li>
+	    				<img src="img/Exeter_1.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Exeter_2.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Exeter_3.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Exeter_4.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Exeter_5.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Exeter_6.jpg">
+	    			</li>
+	    			<li>
+	    				<img src="img/Exeter_7.jpg">
+	    			</li>
+	    		</ul>
+			</div>
+			<div class="projects__dots">
+	    		<img src="img/dots.svg">
+	    	</div>
+		</div>
+
+		<!-- /Project end -->
+
 
 
 	</div>

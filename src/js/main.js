@@ -45,6 +45,9 @@ $( ".cross" ).click(function() {
 
 
 $( ".link" ).click(function() {
+    $('.projects__project--about').css({'display':'none','opacity':'0'});
+   	$('.projects__project').fadeIn();
+	
 	let project = $(this).attr('project');
     $('html, body').animate({
         scrollTop: $(`#${project}`).offset().top - $(".header").innerHeight()
